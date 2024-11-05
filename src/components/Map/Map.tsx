@@ -7,7 +7,7 @@ import MarkerList from "./components/MarkerList";
 import InfoWindowContent from "./components/InfoWindowContent";
 import useSelectedMarker from "./hooks/useSelectedMarker";
 
-const API_KEY = "AIzaSyDR3_8I_iRjnAQCKK8jviKd7IUWz6uAmCo";
+const API_KEY = process.env.REACT_APP_API_KEY || "";
 
 const data = getData()
   .sort((a, b) => b.position.lat - a.position.lat)
