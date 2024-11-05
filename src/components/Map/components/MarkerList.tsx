@@ -1,0 +1,49 @@
+import React from "react";
+import { Pin } from "@vis.gl/react-google-maps";
+import { AdvancedMarkerWithRef } from "./AdvancedMarkerWithRef";
+import CustomMarker from "./CustomMarker";
+import { MarkerData } from "../types";
+
+interface MarkerListProps {
+  markers: MarkerData[];
+  selectedId: string | null;
+  onMarkerClick: (
+    id: string,
+    marker?: google.maps.marker.AdvancedMarkerElement
+  ) => void;
+}
+
+const MarkerList: React.FC<MarkerListProps> = ({
+  markers,
+  selectedId,
+  onMarkerClick,
+}) => {
+  return (
+    <>
+      {markers.map(({ id, position, flag, type, zIndex }) => (
+        <AdvancedMarkerWithRef
+          key={id}
+          position={position}
+          zIndex={selectedId === id ? markers.length + 1 : zIndex}
+          className="custom-marker"
+          style={{
+            transform: `scale(${selectedId === id ? 1.3 : 1})`,
+            transformOrigin: "bottom",
+          }}
+          onMarkerClick={(marker: google.maps.marker.AdvancedMarkerElement) =>
+            onMarkerClick(id, marker)
+          }
+        >
+          {/* <CustomMarker
+            isSelected={selectedId === id}
+            onClick={() => onMarkerClick(id)}
+            image={flag}
+          /> */}
+          <Pin background={selectedId === id ? "#22ccff" : null} />
+        </AdvancedMarkerWithRef>
+      ))}
+    </>
+  );
+};
+
+export default MarkerList;
