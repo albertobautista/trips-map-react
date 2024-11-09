@@ -1,15 +1,11 @@
-.place-details-page {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-}
+
 
 .header {
   display: flex;
   align-items: center;
   gap: 15px;
   margin-bottom: 20px;
+  font-size: 35px;
 }
 
 .flag-icon {
@@ -29,14 +25,12 @@
 }
 
 .map-section,
-.details-section,
-.gallery {
+.details-section {
   margin-top: 20px;
 }
 
 .map-section h3,
-.details-section h3,
-.gallery h3 {
+.details-section h3{
   font-size: 20px;
   margin-bottom: 10px;
 }
@@ -46,15 +40,6 @@
   line-height: 1.6;
 }
 
-.images-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
 
-.gallery-image {
-  width: 300px;
-  height: 300px;
-  border-radius: 8px;
-  object-fit: cover;
-}
+
+

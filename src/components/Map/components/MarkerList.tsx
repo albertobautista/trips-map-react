@@ -1,8 +1,8 @@
 import React from "react";
 import { Pin } from "@vis.gl/react-google-maps";
 import { AdvancedMarkerWithRef } from "./AdvancedMarkerWithRef";
-import CustomMarker from "./CustomMarker";
 import { MarkerData } from "../types";
+import CustomMarker from "./CustomMarker/CustomMarker";
 
 interface MarkerListProps {
   markers: MarkerData[];
@@ -34,12 +34,8 @@ const MarkerList: React.FC<MarkerListProps> = ({
             onMarkerClick(id, marker)
           }
         >
-          {/* <CustomMarker
-            isSelected={selectedId === id}
-            onClick={() => onMarkerClick(id)}
-            image={flag}
-          /> */}
-          <Pin background={selectedId === id ? "#22ccff" : null} />
+          <CustomMarker isSelected={selectedId === id} image={flag} />
+          {/* <Pin background={selectedId === id ? "#22ccff" : null} /> */}
         </AdvancedMarkerWithRef>
       ))}
     </>

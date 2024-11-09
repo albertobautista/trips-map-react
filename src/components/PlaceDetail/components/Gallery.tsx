@@ -1,6 +1,8 @@
+import "./Gallery.css";
+
 const Gallery = ({ images }: { images: string[] }) => (
-  <section className="gallery">
-    <h3>Galería de Imágenes</h3>
+  <section>
+    <h3>Gallery</h3>
     <div className="images-container">
       {images.map((image, index) => (
         <img

@@ -4,15 +4,17 @@ import Header from "./components//Header";
 import MapSection from "./components//MapSection";
 import DetailsSection from "./components//DetailsSection";
 import Gallery from "./components/Gallery";
+import "./PlaceDetail.css";
+
 const data = getData();
 
 const PlaceDetail: React.FC = () => {
-  const { id } = useParams<{ id: string }>(); // Obtiene el id de los parámetros de la URL
-  const navigate = useNavigate(); // Hook para manejar la navegación
+  const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
   const place = data.find((place) => place.id === id);
 
   if (!place) {
-    return <h2>place no encontrado</h2>; // Mensaje si no se encuentra el place
+    return <h2>Not found</h2>;
   }
   const {
     country,
@@ -25,16 +27,20 @@ const PlaceDetail: React.FC = () => {
   } = place;
 
   const handleBack = () => {
-    navigate(-1); // Navega hacia atrás en el historial
+    navigate(-1);
   };
 
   return (
     <div className="place-details-page">
       <Header country={country} city={city} flag={flag} year={year} />
-      <MapSection position={position} />
-      <DetailsSection description={description} />
       {images && images.length > 0 && <Gallery images={images} />}
-      <button onClick={handleBack}>Regresar</button>
+      <MapSection position={position} />
+      {description && <DetailsSection description={description} />}
+      <div className="button-container">
+        <button className="back-button" onClick={handleBack}>
+          Regresar
+        </button>
+      </div>
     </div>
   );
 };
