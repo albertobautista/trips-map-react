@@ -2,7 +2,7 @@ import { menuItems } from "./constants";
 
 export const Navbar = () => {
   return (
-    <nav className="shadow-lg bg-sky-700">
+    <nav className="shadow-lg bg-sky-700 sticky">
       <div className="container flex items-center justify-center p-1 mx-auto capitalize">
         {menuItems.map((item, index) => {
           return (
