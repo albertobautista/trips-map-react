@@ -8,7 +8,7 @@ export const MainLayout: FC<Props> = ({ children }) => {
   return (
     <div className="font-questrial">
       <Navbar />
-      {children}
+      <div className="mt-12">{children}</div>
     </div>
   );
 };
