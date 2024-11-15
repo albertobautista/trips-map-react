@@ -9,11 +9,11 @@ const Header = ({
   flag: string;
   year: number;
 }) => (
-  <header className="header">
-    <div>{flag}</div>
-    <div className="location-info">
-      <h1>{country}</h1>
-      <h2>
+  <header className="flex items-center gap-5 mb-5">
+    <div className="text-5xl">{flag}</div>
+    <div>
+      <h1 className="text-4xl">{country}</h1>
+      <h2 className="text-lg text-gray-500">
         {city} - {year}
       </h2>
     </div>

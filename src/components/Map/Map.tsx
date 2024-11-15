@@ -13,7 +13,7 @@ const data = getData()
   .sort((a, b) => b.position.lat - a.position.lat)
   .map((dataItem, index) => ({ ...dataItem, zIndex: index }));
 
-const MyMap: React.FC = () => {
+export const MyMap: React.FC = () => {
   const [markers] = useState(data);
 
   const {
@@ -49,5 +49,3 @@ const MyMap: React.FC = () => {
     </APIProvider>
   );
 };
-
-export default MyMap;

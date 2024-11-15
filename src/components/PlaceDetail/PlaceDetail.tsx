@@ -4,7 +4,6 @@ import Header from "./components//Header";
 import MapSection from "./components//MapSection";
 import DetailsSection from "./components//DetailsSection";
 import Gallery from "./components/Gallery";
-import "./PlaceDetail.css";
 
 const data = getData();
 
@@ -31,13 +30,16 @@ const PlaceDetail: React.FC = () => {
   };
 
   return (
-    <div className="place-details-page">
+    <div className="max-w-[800px] mx-auto p-5">
       <Header country={country} city={city} flag={flag} year={year} />
       {images && images.length > 0 && <Gallery images={images} />}
       <MapSection position={position} />
       {description && <DetailsSection description={description} />}
-      <div className="button-container">
-        <button className="back-button" onClick={handleBack}>
+      <div className="flex justify-end">
+        <button
+          onClick={handleBack}
+          className="mt-5 px-5 py-2.5 text-xs text-white bg-[#509cff] border-2 border-[#509cff] rounded-xl cursor-pointer transition-all duration-300 ease-in-out shadow-lg hover:bg-[#509cff] hover:shadow-xl hover:translate-y-[-2px] hover:scale-105 active:bg-[#509cff] active:shadow-sm active:translate-y-1 active:scale-95"
+        >
           Regresar
         </button>
       </div>
