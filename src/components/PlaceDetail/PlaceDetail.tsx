@@ -38,9 +38,9 @@ const PlaceDetail: React.FC = () => {
       <div className="flex justify-end">
         <button
           onClick={handleBack}
-          className="mt-5 px-5 py-2.5 text-xs text-white bg-[#509cff] border-2 border-[#509cff] rounded-xl cursor-pointer transition-all duration-300 ease-in-out shadow-lg hover:bg-[#509cff] hover:shadow-xl hover:translate-y-[-2px] hover:scale-105 active:bg-[#509cff] active:shadow-sm active:translate-y-1 active:scale-95"
+          className="mt-5 px-5 py-2.5 text-md text-white bg-sky-700 rounded-xl cursor-pointer transition-all duration-300 ease-in-out shadow-lg hover:bbg-sky-800 hover:shadow-xl hover:translate-y-[-2px] hover:scale-105 active:shadow-sm active:translate-y-1 active:scale-95"
         >
-          Regresar
+          Back
         </button>
       </div>
     </div>
