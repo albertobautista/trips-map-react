@@ -63,7 +63,7 @@ export const MyMap: React.FC = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3 }}
             onClick={() => setIsPanelOpen(true)}
-            className="absolute p-3 text-white transition rounded-full shadow-lg bg-sky-700 top-4 left-4 hover:bg-sky-800"
+            className="absolute p-3 text-white transition rounded-full shadow-lg bg-sky-700 top-16 left-4 hover:bg-sky-800"
           >
             Menu
           </motion.button>
