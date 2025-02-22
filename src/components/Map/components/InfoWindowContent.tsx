@@ -27,6 +27,11 @@ const InfoWindowContent: React.FC<InfoWindowContentProps> = ({
   }
 
   const markerData = markers.find((marker) => marker.id === markerId);
+  if (!markerData) return null;
+
+  const citiesList = markers.filter(
+    (marker) => marker.city.toLowerCase() === markerData.city.toLowerCase()
+  );
 
   return (
     <motion.div
@@ -37,31 +42,35 @@ const InfoWindowContent: React.FC<InfoWindowContentProps> = ({
       transition={{ duration: 0.3, ease: "easeOut" }}
     >
       <h2 className="text-2xl font-bold text-gray-800">
-        {markerData ? `${markerData.country} ${markerData.flag}` : "No name"}
+        {markerData.country} {markerData.flag}
       </h2>
-      {markerData && (
-        <>
-          <p className="text-lg text-gray-700">
-            <strong className="font-semibold">City:</strong> {markerData.city}
-          </p>
-          <p className="text-lg text-gray-700">
-            <strong className="font-semibold">Year:</strong> {markerData.year}
-          </p>
-          {markerData.description && (
-            <p className="text-gray-700">
-              <strong className="font-semibold">Description:</strong>{" "}
-              {markerData.description}
-            </p>
-          )}
-          <div className="flex justify-center">
+
+      <p className="text-lg text-gray-700">
+        <strong className="font-semibold">City:</strong> {markerData.city}
+      </p>
+
+      <div className="flex gap-1 text-lg text-gray-700">
+        <strong className="font-semibold">
+          Year{citiesList.length > 1 ? "s" : ""}:
+        </strong>
+        <div className="flex gap-2">
+          {citiesList.map((city) => (
             <Link
-              to={`/details/${markerData.id}`}
-              className="px-4 py-2 font-medium text-white transition duration-200 rounded-md text-md bg-sky-700 hover:bg-sky-800"
+              key={city.id}
+              to={`/details/${city.id}`}
+              className="text-sky-700 hover:underline"
             >
-              More details
+              {city.year}
             </Link>
-          </div>
-        </>
+          ))}
+        </div>
+      </div>
+
+      {markerData.description && (
+        <p className="text-gray-700">
+          <strong className="font-semibold">Description:</strong>{" "}
+          {markerData.description}
+        </p>
       )}
     </motion.div>
   );
