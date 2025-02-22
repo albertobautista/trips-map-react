@@ -48,13 +48,11 @@ export function getCitiesPerCountry() {
 
 const data = getCitiesPerCountry();
 
-console.log(data);
-
 const ControlPanel: React.FC<ControlPanelProps> = ({ isOpen, onClose }) => {
   const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
 
   const handleCountryClick = (country: string) => {
-    setSelectedCountry(country === selectedCountry ? null : country); // Toggle
+    setSelectedCountry(country === selectedCountry ? null : country);
   };
 
   return (
@@ -62,7 +60,9 @@ const ControlPanel: React.FC<ControlPanelProps> = ({ isOpen, onClose }) => {
       initial={{ x: -250 }}
       animate={{ x: isOpen ? 0 : -250 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
-      className="absolute flex flex-col p-4 space-y-2 bg-white rounded-lg shadow-lg top-4 left-4 w-60"
+      className={`${
+        !isOpen ? "w-40" : "w-64"
+      } absolute flex flex-col p-4 space-y-2 bg-white rounded-lg shadow-lg top-16 left-4 `}
     >
       <div className="flex items-center justify-between">
         <h2 className="text-xl font-semibold text-gray-800">Countries</h2>
@@ -85,7 +85,7 @@ const ControlPanel: React.FC<ControlPanelProps> = ({ isOpen, onClose }) => {
                 <div className="flex-1">
                   <span className="font-semibold text-md">{item.country}</span>
                   <div className="text-sm text-gray-600">
-                    {item.count} cities
+                    {item.count} visits
                   </div>
                 </div>
               </div>
