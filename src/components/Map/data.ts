@@ -3,7 +3,7 @@ import { MarkerData } from "./types";
 export function getData() {
   const data: MarkerData[] = [
     {
-      id: "0",
+      id: "1",
       country: "United Arab Emirates",
       flag: "🇦🇪",
       city: "Dubái",
@@ -15,7 +15,7 @@ export function getData() {
       description: "Clubs World Cup 2018",
     },
     {
-      id: "1",
+      id: "2",
       country: "United Arab Emirates",
       flag: "🇦🇪",
       city: "Al Ain",
@@ -27,7 +27,7 @@ export function getData() {
       description: "Clubs World Cup 2018",
     },
     {
-      id: "2",
+      id: "3",
       country: "United Arab Emirates",
       flag: "🇦🇪",
       city: "Abu Dhabi",
@@ -39,7 +39,7 @@ export function getData() {
       description: "Clubs World Cup 2018",
     },
     {
-      id: "3",
+      id: "4",
       country: "Spain",
       flag: "🇪🇸",
       city: "Barcelona",
@@ -50,7 +50,7 @@ export function getData() {
       url: "/city/barcelona",
     },
     {
-      id: "4",
+      id: "5",
       country: "Spain",
       flag: "🇪🇸",
       city: "Madrid",
@@ -61,7 +61,7 @@ export function getData() {
       url: "/city/madrid",
     },
     {
-      id: "5",
+      id: "6",
       country: "France",
       flag: "🇫🇷",
       city: "Paris",
@@ -72,7 +72,7 @@ export function getData() {
       url: "/city/paris",
     },
     {
-      id: "6",
+      id: "7",
       country: "United States of America",
       flag: "🇺🇸",
       city: "Los Angeles",
@@ -83,7 +83,7 @@ export function getData() {
       url: "/city/los-angeles",
     },
     {
-      id: "7",
+      id: "8",
       country: "United States of America",
       flag: "🇺🇸",
       city: "Orlando",
@@ -94,7 +94,7 @@ export function getData() {
       url: "/city/orlando",
     },
     {
-      id: "8",
+      id: "9",
       country: "France",
       flag: "🇫🇷",
       city: "Paris",
@@ -105,7 +105,7 @@ export function getData() {
       url: "/city/paris-2023",
     },
     {
-      id: "9",
+      id: "10",
       country: "Spain",
       flag: "🇪🇸",
       city: "Barcelona",
@@ -116,7 +116,7 @@ export function getData() {
       url: "/city/barcelona-2023",
     },
     {
-      id: "10",
+      id: "11",
       country: "Spain",
       flag: "🇪🇸",
       city: "Madrid",
@@ -127,7 +127,7 @@ export function getData() {
       url: "/city/madrid-2023",
     },
     {
-      id: "11",
+      id: "12",
       country: "Italy",
       flag: "🇮🇹",
       city: "Venice",
@@ -138,7 +138,7 @@ export function getData() {
       url: "/city/venice",
     },
     {
-      id: "12",
+      id: "13",
       country: "Italy",
       flag: "🇮🇹",
       city: "Florence",
@@ -149,7 +149,7 @@ export function getData() {
       url: "/city/florence",
     },
     {
-      id: "13",
+      id: "14",
       country: "Italy",
       flag: "🇮🇹",
       city: "Pisa",
@@ -160,7 +160,7 @@ export function getData() {
       url: "/city/pisa",
     },
     {
-      id: "14",
+      id: "15",
       country: "Italy",
       flag: "🇮🇹",
       city: "Milán",
@@ -171,7 +171,7 @@ export function getData() {
       url: "/city/milan",
     },
     {
-      id: "15",
+      id: "16",
       country: "Italy",
       flag: "🇮🇹",
       city: "Rome",
@@ -182,7 +182,7 @@ export function getData() {
       url: "/city/rome",
     },
     {
-      id: "16",
+      id: "17",
       country: "Vatican",
       flag: "🇻🇦",
       city: "Vatican",
@@ -193,7 +193,7 @@ export function getData() {
       url: "/city/rome",
     },
     {
-      id: "17",
+      id: "18",
       country: "Spain",
       flag: "🇪🇸",
       city: "Guadalajara",
@@ -204,7 +204,7 @@ export function getData() {
       url: "/city/guadalajara",
     },
     {
-      id: "18",
+      id: "19",
       country: "United States of America",
       flag: "🇺🇸",
       city: "Miami",
@@ -215,7 +215,7 @@ export function getData() {
       url: "/city/miami",
     },
     {
-      id: "19",
+      id: "20",
       country: "Bahamas",
       flag: "🇧🇸",
       city: "Nassau",
@@ -233,7 +233,7 @@ export function getData() {
       ],
     },
     {
-      id: "20",
+      id: "21",
       country: "Dominican Republic",
       flag: "🇩🇴",
       city: "Puerto Plata",
@@ -251,7 +251,7 @@ export function getData() {
       ],
     },
     {
-      id: "21",
+      id: "22",
       country: "United States of America",
       flag: "🇺🇸",
       city: "San Diego",
@@ -262,7 +262,7 @@ export function getData() {
       url: "/city/san-diego",
     },
     {
-      id: "22",
+      id: "23",
       country: "Belgium",
       flag: "🇧🇪",
       city: "Brussels",
@@ -273,7 +273,7 @@ export function getData() {
       url: "/city/brussels",
     },
     {
-      id: "23",
+      id: "24",
       country: "Netherlands",
       flag: "🇳🇱",
       city: "Amsterdam",
@@ -284,7 +284,7 @@ export function getData() {
       url: "/city/amsterdam",
     },
     {
-      id: "24",
+      id: "25",
       country: "England",
       flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
       city: "London",
@@ -295,7 +295,7 @@ export function getData() {
       url: "/city/london",
     },
     {
-      id: "25",
+      id: "26",
       country: "France",
       flag: "🇫🇷",
       city: "Paris",
@@ -306,7 +306,7 @@ export function getData() {
       url: "/city/paris-2024",
     },
     {
-      id: "26",
+      id: "27",
       country: "Belgium",
       flag: "🇧🇪",
       city: "Bruges",
@@ -317,7 +317,7 @@ export function getData() {
       url: "/city/bruges",
     },
     {
-      id: "26",
+      id: "28",
       country: "Belgium",
       flag: "🇧🇪",
       city: "Antwerp",
@@ -328,7 +328,7 @@ export function getData() {
       url: "/city/antwerp",
     },
     {
-      id: "27",
+      id: "29",
       country: "Belgium",
       flag: "🇧🇪",
       city: "Ghent",
@@ -339,7 +339,7 @@ export function getData() {
       url: "/city/ghent",
     },
     {
-      id: "28",
+      id: "30",
       country: "Netherlands",
       flag: "🇳🇱",
       city: "Zaanse Schans",
@@ -350,7 +350,7 @@ export function getData() {
       url: "/city/zaanse-schans",
     },
     {
-      id: "29",
+      id: "31",
       country: "Netherlands",
       flag: "🇳🇱",
       city: "Zaandam",
@@ -361,7 +361,7 @@ export function getData() {
       url: "/city/zaandam",
     },
     {
-      id: "30",
+      id: "32",
       country: "Italy",
       flag: "🇮🇹",
       city: "Rome",
@@ -372,7 +372,7 @@ export function getData() {
       url: "/city/rome",
     },
     {
-      id: "31",
+      id: "33",
       country: "Italy",
       flag: "🇮🇹",
       city: "Venice",
@@ -383,7 +383,7 @@ export function getData() {
       url: "/city/venice",
     },
     {
-      id: "32",
+      id: "34",
       country: "Italy",
       flag: "🇮🇹",
       city: "Padua",
@@ -394,7 +394,7 @@ export function getData() {
       url: "/city/padua",
     },
     {
-      id: "32",
+      id: "35",
       country: "Italy",
       flag: "🇮🇹",
       city: "Florence",
@@ -405,7 +405,7 @@ export function getData() {
       url: "/city/florence",
     },
     {
-      id: "33",
+      id: "36",
       country: "Italy",
       flag: "🇮🇹",
       city: "Pisa",
@@ -416,7 +416,7 @@ export function getData() {
       url: "/city/pisa",
     },
     {
-      id: "34",
+      id: "37",
       country: "Portugal",
       flag: "🇵🇹",
       city: "Lisbon",
@@ -427,7 +427,7 @@ export function getData() {
       url: "/city/lisbon",
     },
     {
-      id: "35",
+      id: "38",
       country: "Portugal",
       flag: "🇵🇹",
       city: "Oporto",
@@ -438,7 +438,7 @@ export function getData() {
       url: "/city/oporto",
     },
     {
-      id: "36",
+      id: "39",
       country: "Spain",
       flag: "🇪🇸",
       city: "Madrid",
@@ -449,7 +449,7 @@ export function getData() {
       url: "/city/madrid",
     },
     {
-      id: "37",
+      id: "40",
       country: "Vatican",
       flag: "🇻🇦",
       city: "Vatican",
