@@ -585,7 +585,7 @@ export function getData() {
       country: "Germany",
       flag: "🇩🇪",
       city: "Munich",
-      year: 2003,
+      year: 2025,
       position: { lat: 48.3538284, lng: 11.781021 },
       zIndex: 0,
       type: "pin",
