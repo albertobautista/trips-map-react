@@ -601,6 +601,7 @@ export function getData() {
       zIndex: 0,
       type: "pin",
       url: "/city/veracruz",
+      description: "Kings League finals 2025",
     },
   ];
 
