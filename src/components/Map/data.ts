@@ -591,6 +591,17 @@ export function getData() {
       type: "pin",
       url: "/city/cdmx",
     },
+    {
+      id: "53",
+      country: "Mexico",
+      flag: "🇲🇽",
+      city: "Veracruz",
+      year: 2025,
+      position: { lat: 19.164222, lng: -96.125017 },
+      zIndex: 0,
+      type: "pin",
+      url: "/city/veracruz",
+    },
   ];
 
   return data;
