@@ -580,19 +580,9 @@ export function getData() {
       type: "pin",
       url: "/city/cdmx",
     },
+
     {
       id: "52",
-      country: "Germany",
-      flag: "🇩🇪",
-      city: "Munich",
-      year: 2025,
-      position: { lat: 48.3538284, lng: 11.781021 },
-      zIndex: 0,
-      type: "pin",
-      url: "/city/cdmx",
-    },
-    {
-      id: "53",
       country: "Mexico",
       flag: "🇲🇽",
       city: "Veracruz",
