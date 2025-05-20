@@ -492,17 +492,7 @@ export function getData() {
       type: "pin",
       url: "/city/cdmx",
     },
-    {
-      id: "44",
-      country: "Mexico",
-      flag: "🇲🇽",
-      city: "Tijuana",
-      year: 2022,
-      position: { lat: 32.5408452, lng: -116.9716281 },
-      zIndex: 0,
-      type: "pin",
-      url: "/city/cdmx",
-    },
+
     {
       id: "45",
       country: "Mexico",
