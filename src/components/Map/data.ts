@@ -583,6 +583,18 @@ export function getData() {
       url: "/city/veracruz",
       description: "Kings League finals 2025",
     },
+    {
+      id: "53",
+      country: "United States of America",
+      flag: "🇺🇸",
+      city: "Los Angeles",
+      year: 2025,
+      position: { lat: 33.953587, lng: -118.33963 },
+      zIndex: 0,
+      type: "pin",
+      url: "/city/los-angeles-2025",
+      description: "Copa Oro 2025",
+    },
   ];
 
   return data;
