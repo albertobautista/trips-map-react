@@ -595,6 +595,29 @@ export function getData() {
       url: "/city/los-angeles-2025",
       description: "Copa Oro 2025",
     },
+    {
+      id: "54",
+      country: "Mexico",
+      flag: "🇲🇽",
+      city: "Torreón",
+      year: 2025,
+      position: { lat: 25.62891, lng: -103.37995 },
+      zIndex: 0,
+      type: "pin",
+      url: "/city/torreon-2025",
+      description: "Santos vs Chivas",
+    },
+    {
+      id: "55",
+      country: "Mexico",
+      flag: "🇲🇽",
+      city: "La Paz",
+      year: 2025,
+      position: { lat: 24.15685, lng: -110.3033 },
+      zIndex: 0,
+      type: "pin",
+      url: "/city/la-paz-2025",
+    },
   ];
 
   return data;
