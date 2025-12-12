@@ -46,7 +46,19 @@ export function getCitiesPerCountry() {
   })).sort((a, b) => b.count - a.count);
 }
 
+export function getStats() {
+  const data = getData();
+  const countriesSet = new Set(data.map((item) => item.country));
+  const citiesSet = new Set(data.map((item) => item.city));
+
+  return {
+    countries: countriesSet.size,
+    cities: citiesSet.size,
+  };
+}
+
 const data = getCitiesPerCountry();
+const stats = getStats();
 
 const ControlPanel: React.FC<ControlPanelProps> = ({ isOpen, onClose }) => {
   const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
@@ -65,7 +77,13 @@ const ControlPanel: React.FC<ControlPanelProps> = ({ isOpen, onClose }) => {
       } absolute flex flex-col p-4 space-y-2 bg-white rounded-lg shadow-lg top-16 left-4 `}
     >
       <div className="flex items-center justify-between">
-        <h2 className="text-xl font-semibold text-gray-800">Countries</h2>
+        <div>
+          <h2 className="text-xl font-semibold text-gray-800">Countries</h2>
+          <p className="text-sm text-gray-600">
+            {stats.countries} countries visited
+          </p>
+          <p className="text-sm text-gray-600">{stats.cities} cities visited</p>
+        </div>
         <button
           onClick={onClose}
           className="self-end px-2 py-1 text-white transition rounded-full"
