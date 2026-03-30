@@ -1,5 +1,4 @@
 import React from "react";
-import { Pin } from "@vis.gl/react-google-maps";
 import { AdvancedMarkerWithRef } from "./AdvancedMarkerWithRef";
 import { MarkerData } from "../types";
 import CustomMarker from "./CustomMarker/CustomMarker";
@@ -9,7 +8,7 @@ interface MarkerListProps {
   selectedId: string | null;
   onMarkerClick: (
     id: string,
-    marker?: google.maps.marker.AdvancedMarkerElement
+    marker?: google.maps.marker.AdvancedMarkerElement,
   ) => void;
 }
 
